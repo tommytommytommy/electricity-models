@@ -38,3 +38,6 @@ After successfully running the model, GAMS will create in the same directory the
 2. output_marginalPrices.csv: the marginal price for each hour.
 3. output_dailyPipelineCapacityPurchase.csv: each firm's daily, non-firm pipeline capacity purchases for natural gas.
 4. output_generation.csv: each power plant's hourly generation level.
+
+## Fuel-constrained, system-states unit commitment model
+The `fuel_constrained_unit_commitment_system_states` directory contains a long-term example of a system-states based unit commitment model that runs over three years across six possible demand and pipeline scenarios for about two hundred power plants. This directory contains a full implementation of the model described in [http://dspace.mit.edu/handle/1721.1/98547](http://dspace.mit.edu/handle/1721.1/98547), with a single example set of inputs. It demonstrates how to convert the hourly fuel-constrained unit commitment problem into the system-states formulation, though it is much less easy to interpret and study given all of the additional embellishments related to long-term pipeline capacity contracts and power plant maintenance.
